@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  server-api:
+    build: ./server
+    container_name: server-api-react-sneakers
+    ports:
+      - "4008:3008"
+    volumes:
+      - ./server:/app
+  client:
+    build: ./client
+    container_name: client-frontend-react-sneakers
+    ports:
+      - '2008:3000'
+    volumes:
+      - ./client:/app
+    stdin_open: true
+    tty: true
