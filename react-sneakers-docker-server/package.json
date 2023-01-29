@@ -1,0 +1,25 @@
+{
+  "name": "nicksblog",
+  "version": "1.0.0",
+  "description": "Quick start cli for single page React application",
+  "main": "server.js",
+  "type": "module",
+  "engines": {
+    "node": "19.4.0",
+    "npm": "9.3.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "biz"
+  ],
+  "author": "Me",
+  "license": "MIT",
+  "bin": "index.js",
+  "dependencies": {
+    "json-server": "^0.17.1",
+    "nodemon": "^2.0.20"
+  }
+}

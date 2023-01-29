@@ -1,0 +1,10 @@
+version: '3.8'
+services:  
+  api:
+    build: .   
+    container_name: server-api-react-sneakers
+    ports:      
+      - "4008:3008"   
+    volumes:     
+      - /app      
+      - /app/node_modules
